@@ -1,13 +1,15 @@
-import './App.css';
-import Sample from './Sample';
-
-const App = () => {
+import './App.css'
+import { Button } from "@/components/ui/button"
+function App() {
   return (
-    <div>
-      <h1 className="text-red-500">Hello World</h1>
-      <Sample />
-    </div>
-  );
-};
+    <>
+      <Button>Click me</Button>
+      <Button variant="outline">Click me</Button>
+      <Button variant="ghost">Click me</Button>
+      <Button variant="link">Click me</Button>
+      <Button variant="destructive">Click me</Button>      
+    </>
+  )
+}
 
-export default App;
+export default App
